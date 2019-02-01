@@ -1,0 +1,171 @@
+DATABASE C:\Program Files (x86)\USGS\Phreeqc Interactive 3.4.0-12927\database\phreeqc.dat
+SOLUTION 1
+    temp      25
+    pH        8.22
+    pe        8.451
+    redox     pe
+    units     ppm
+    density   1.023
+    Ca        412.3
+    Alkalinity 141.682
+    Cl        19353
+    Fe        0.002
+    K         399.1
+    Na        10768
+    S(6)      2712
+    -water    1.023 # kg
+SOLUTION 2
+    temp      50
+    pH        8.22
+    pe        8.451
+    redox     pe
+    units     ppm
+    density   1.023
+    Alkalinity 141.682
+    Ca        412.3
+    Cl        19353
+    Fe        0.002
+    K         399.1
+    Na        10768
+    S(6)      2712
+    -water    1.023 # kg
+SOLUTION 3
+    temp      80
+    pH        8.22
+    pe        8.451
+    redox     pe
+    units     ppm
+    density   1.023
+    Alkalinity 141.682
+    Ca        412.3
+    Cl        19353
+    Fe        0.002
+    K         399.1
+    Na        10768
+    S(6)      2712
+    -water    1.023 # kg
+SAVE solution 1
+SAVE solution 2
+SAVE solution 3
+END
+
+GAS_PHASE 1
+    -fixed_pressure
+    -pressure 1
+    -volume 1
+    -temperature 25
+    CO2(g)    1
+USE solution 1
+END
+GAS_PHASE 2
+    -fixed_pressure
+    -pressure 1
+    -volume 1
+    -temperature 50
+    CO2(g)    1
+USE solution 2
+END
+GAS_PHASE 3
+    -fixed_pressure
+    -pressure 1
+    -volume 1
+    -temperature 80
+    CO2(g)    1
+USE solution 3
+END
+GAS_PHASE 4
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    -temperature 25
+    CO2(g)    5
+USE solution 1
+END
+GAS_PHASE 5
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    -temperature 50
+    CO2(g)    5
+USE solution 2
+END
+GAS_PHASE 6
+    -fixed_pressure
+    -pressure 5
+    -volume 1
+    -temperature 80
+    CO2(g)    5
+USE solution 3
+END
+GAS_PHASE 7
+    -fixed_pressure
+    -pressure 10
+    -volume 1
+    -temperature 25
+    CO2(g)    10
+USE solution 1
+END
+GAS_PHASE 8
+    -fixed_pressure
+    -pressure 10
+    -volume 1
+    -temperature 50
+    CO2(g)    10
+USE solution 2
+END
+GAS_PHASE 9
+    -fixed_pressure
+    -pressure 10
+    -volume 1
+    -temperature 80
+    CO2(g)    10
+USE solution 3
+END
+GAS_PHASE 10
+    -fixed_pressure
+    -pressure 15
+    -volume 1
+    -temperature 25
+    CO2(g)    15
+USE solution 1
+END
+GAS_PHASE 11
+    -fixed_pressure
+    -pressure 15
+    -volume 1
+    -temperature 50
+    CO2(g)    15
+USE solution 2
+END
+GAS_PHASE 12
+    -fixed_pressure
+    -pressure 15
+    -volume 1
+    -temperature 80
+    CO2(g)    15
+USE solution 3
+END
+GAS_PHASE 13
+    -fixed_pressure
+    -pressure 20
+    -volume 1
+    -temperature 25
+    CO2(g)    20
+USE solution 1
+END
+GAS_PHASE 14
+    -fixed_pressure
+    -pressure 20
+    -volume 1
+    -temperature 50
+    CO2(g)    20
+USE solution 2
+END
+GAS_PHASE 15
+    -fixed_pressure
+    -pressure 20
+    -volume 1
+    -temperature 80
+    CO2(g)    20
+USE solution 3
+END
